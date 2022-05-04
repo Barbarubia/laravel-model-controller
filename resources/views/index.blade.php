@@ -1,5 +1,7 @@
 @extends('base')
 
+@section('title', 'Movies')
+
 @section('content')
     <h1>Movies from Older to Newer</h1>
 
@@ -15,5 +17,5 @@
             </div>
         @endforeach
     </div>
-    @dd($movies)
+    {{-- @dd($movies) --}}
 @endsection
