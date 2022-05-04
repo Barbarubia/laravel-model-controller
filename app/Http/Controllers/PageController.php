@@ -9,7 +9,7 @@ class PageController extends Controller
 {
     public function index() {
         // Creo la variabile moviesList che contiene la lista di tutti i film ottenuta leggendo il database attraverso il modello Movie
-        $moviesList = Movie::all();
+        $moviesList = Movie::orderBy('date')->get();
         // dd($moviesList);
 
         // Creo la variabile data che è un array di tutti i film contenuti in moviesList

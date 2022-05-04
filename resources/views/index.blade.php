@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('content')
-    <h1>Movies</h1>
+    <h1>Movies from Older to Newer</h1>
 
     <div class="container">
         @foreach ($movies as $movie)
